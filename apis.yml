@@ -1,7 +1,26 @@
 aid: fla
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fla.png
 name: Fla
-description: Fla is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FLA Orthopedics (FLA Holdings) is a United States-based manufacturer of orthopedic,
+  sports medicine, and bracing products, including supports, braces, splints, and
+  soft-goods for the medical, clinical, and consumer health markets. Canaan Partners
+  invested in FLA Holdings at the Series D stage; the company was surfaced through
+  that portfolio and added to the API Evangelist network as a lead. FLA Orthopedics
+  is a physical medical-device maker and, as of this enrichment pass, publishes no
+  public developer program, API, SDK, or documentation surface. This profile is
+  identity-only and carries no API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/fla/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,38 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-provider: false
+x-enrichment-note: >-
+  Non-API-provider physical medical-device manufacturer. No developer portal, API,
+  OpenAPI, event surface, or package registry presence found. Website confirmed live
+  (HTTP 200 via browser UA; behind bot-protection). Identity pass only.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Medical Devices
+- Orthopedics
+- Sports Medicine
+- Bracing
+- Manufacturing
+- Consumer Health
 apis: []
+common:
+- type: DomainSecurity
+  url: security/fla-domain-security.yml
+- type: Website
+  url: https://flaorthopedics.com/
+- type: Company
+  url: https://www.canaan.com/companies/fla-holdings
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
