@@ -33,7 +33,7 @@ x-enrichment-note: >-
   Non-API-provider physical medical-device manufacturer. No developer portal, API,
   OpenAPI, event surface, or package registry presence found. Website confirmed live
   (HTTP 200 via browser UA; behind bot-protection). Identity pass only.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
